@@ -3,19 +3,58 @@
 AWS構成図を作ってもらうためのアイコン集です。
 figma Makeからアクセスすることを前提としています。
 
+## Architecture-Group-Icons（枠線用アイコン）
+
+以下のアイコンは構成図の枠線として使用します。すべて40x40pxの正方形アイコンで、角は丸くない矩形です。
+
+### ネットワーク関連
+- **VPC枠線**: `Architecture-Group-Icons_02072025/Virtual-private-cloud-VPC_32.svg` - 紫色 `#8C4FFF`
+- **Public Subnet枠線**: `Architecture-Group-Icons_02072025/Public-subnet_32.svg` - 緑色 `#7AA116`
+- **Private Subnet枠線**: `Architecture-Group-Icons_02072025/Private-subnet_32.svg` - 青緑色 `#00A4A6`
+- **Region枠線**: `Architecture-Group-Icons_02072025/Region_32.svg` - 青緑色 `#00A4A6`
+- **AWS Cloud枠線**: `Architecture-Group-Icons_02072025/AWS-Cloud_32.svg` - ダークグレー `#242F3E`
+- **AWS Account枠線**: `Architecture-Group-Icons_02072025/AWS-Account_32.svg` - ピンク `#E7157B`
+
+### コンピューティング関連
+- **Auto Scaling Group枠線**: `Architecture-Group-Icons_02072025/Auto-Scaling-group_32.svg` - オレンジ `#ED7100`
+- **EC2 Instance Contents枠線**: `Architecture-Group-Icons_02072025/EC2-instance-contents_32.svg` - オレンジ `#ED7100`
+- **Spot Fleet枠線**: `Architecture-Group-Icons_02072025/Spot-Fleet_32.svg` - オレンジ `#ED7100`
+- **Server Contents枠線**: `Architecture-Group-Icons_02072025/Server-contents_32.svg` - グレー `#7D8998`
+- **Corporate Data Center枠線**: `Architecture-Group-Icons_02072025/Corporate-data-center_32.svg` - グレー `#7D8998`
+
+### IoT関連
+- **AWS IoT Greengrass Deployment枠線**: `Architecture-Group-Icons_02072025/AWS-IoT-Greengrass-Deployment_32.svg` - 緑色 `#7AA116`
+
 ## Figma Makeへの指示
 
-- VPC枠線は `Architecture-Group-Icons_02072025/Virtual-private-cloud-VPC_32.svg` を使う
-- 矢印はFigma標準の線を使い、Stroke 2px・角丸・矢印ヘッドは終端のみ（Arrow）・色は `#111827` / 80% 不透明度で描画してもらう
-- 必須リソースの場所
-  - VPC本体: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Virtual-private-cloud-VPC_48.svg`
-  - ルートテーブル: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-Route-53_Route-Table_48.svg`
-  - インターネットゲートウェイ: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Internet-Gateway_48.svg`
-  - NATゲートウェイ: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_NAT-Gateway_48.svg`
-  - ルーター: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Router_48.svg`
-  - ENI: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Elastic-Network-Interface_48.svg`
-  - VPCエンドポイント: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Endpoints_48.svg`
-  - サブネットの専用アイコンは未収録（必要なら追加して利用）
+### 枠線の描画方法
+各種枠線は以下のように描画する：
+- **Rectangle（矩形）を使用**
+- **Fill（塗りつぶし）**: なし（透明）
+- **Stroke（線）**: 2px、上記の各アイコンと同じ色を使用
+- **Corner Radius（角丸）**: 0px（角を丸くしない）
+- **線のスタイル**: 実線
+
+例：
+- VPC枠線: Rectangle、Stroke 2px、色 `#8C4FFF`、Fill なし、Corner Radius 0px
+- Public Subnet枠線: Rectangle、Stroke 2px、色 `#7AA116`、Fill なし、Corner Radius 0px
+- Private Subnet枠線: Rectangle、Stroke 2px、色 `#00A4A6`、Fill なし、Corner Radius 0px
+
+### 矢印の描画方法
+- Figma標準の線を使用
+- Stroke 2px
+- 角丸
+- 矢印ヘッドは終端のみ（Arrow）
+- 色は `#111827` / 80% 不透明度
+
+### 必須リソースの場所
+- VPC本体: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Virtual-private-cloud-VPC_48.svg`
+- ルートテーブル: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-Route-53_Route-Table_48.svg`
+- インターネットゲートウェイ: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Internet-Gateway_48.svg`
+- NATゲートウェイ: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_NAT-Gateway_48.svg`
+- ルーター: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Router_48.svg`
+- ENI: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Elastic-Network-Interface_48.svg`
+- VPCエンドポイント: `Resource-Icons_02072025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Endpoints_48.svg`
 
 ## 主要なAWSサービス100選
 
